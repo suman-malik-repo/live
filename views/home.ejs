@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 40px;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+    li {
+      padding: 10px;
+      border: 1px solid #ddd;
+      margin-bottom: 6px;
+      border-radius: 4px;
+      background: #fafafa;
+    }
+    .name {
+      font-weight: bold;
+    }
+    .status {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🔍 Search Orders by Customer Name</h2>
+
+    <input
+      type="text"
+      id="search"
+      placeholder="Type customer name..."
+      autocomplete="off"
+    />
+
+    <ul id="results"></ul>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
